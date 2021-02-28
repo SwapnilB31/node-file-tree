@@ -1,7 +1,7 @@
 # node-file-tree
 node-file-tree is a package for Node.js that converts file/directory structure into JavaScript objects. It also features additional methods that aid in customizing the output. It works on both windows and linux machines.
 
-## Documentation
+# Documentation
 ### How to use
 
 Clone this repository into your project directory, then you can import it in your file using the Node require method as follows:
@@ -19,7 +19,7 @@ This package has two dependencies:
 
 Install these dependencies before using this package.
 
-### Properties
+## Properties
 
 1. **isPlatformWindows**: is true when the system is running windows, false otherwise
 ```javascript
@@ -34,7 +34,7 @@ Install these dependencies before using this package.
   ["/"]
 ```
 
-### Methods
+## Methods
 * **listDirectoryFromPath(path, serverRoot?)**
   * *@param {String}* **path**: The path of the directory which you want to read the contents of.
   * *@param {String}* **serverRoot**: This parameter is optional. This is the path of the folder from which you can serve static files. When this parameter is passed, a relative path for all dirents with respect to the serverRoot is also returned.
@@ -160,7 +160,7 @@ Install these dependencies before using this package.
     
     #### Sample Output
     ```javascript
-      fte.printDirectoryFromPath("F:/Study/Big Data (Hadoop, Scala, RHadoop)");
+      await fte.printDirectoryFromPath("F:/Study/Big Data (Hadoop, Scala, RHadoop)");
     ```
     prints
     ```
@@ -180,7 +180,7 @@ Install these dependencies before using this package.
 * **printDirectoryFromRoot()**: It's similar to **printDirectoryFromPath()** method. The difference is that it performs a Depth First Search on all the Drive partitions on Windows and on the root folder (/) on Linux. Its an asynchronous method and returns a promise; so it needs to be resolved or called inside an async method with the await keyword for it to print the tree-structure. This method may take a lot of time if your system has a deeply nested directory structure.
     
 ## Issues
-Please submit the exact code produced the error along with the error log when you raise an issue. Without the code and the error log, fixing the issues will not be possible. 
+Please submit the exact code that produced the error along with the error log when you raise an issue. Without the code and the error log, fixing the issues will not be possible. 
 
 ## Contribution
 All developers are welcome to contribute to, and improve this package. Just create a pull request and I'll evaluate and merge the PR if it doesn't break anything.
