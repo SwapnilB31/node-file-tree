@@ -2,7 +2,19 @@
 node-file-tree is a package for Node.js that converts file/directory structure into JavaScript objects. It also features additional methods that aid in customizing the output. It works on both windows and linux machines.
 
 # Documentation
-### How to use
+
+## *npm*
+Install with npm
+```
+  npm i node-file-tree-explorer
+```
+
+You can import the modules as follows:
+```javascript
+  const fte = require(".node-file-tree-explorer").explorer()
+```
+
+## Without npm
 
 Clone this repository into your project directory, then you can import it in your file using the Node require method as follows:
 
