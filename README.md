@@ -11,7 +11,7 @@ Install with npm
 
 You can import the modules as follows:
 ```javascript
-  const fte = require(".node-file-tree-explorer").explorer()
+  const fte = require("node-file-tree-explorer").explorer()
 ```
 
 ## Without npm
