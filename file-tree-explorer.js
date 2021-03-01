@@ -1,3 +1,8 @@
+/**
+ * @author github.com/SwapnilB31 Swapnil Bhattacharjee
+ * 28/02/21
+*/
+
 const fs = require('fs').promises;
 const fsConstants = require('fs').constants;
 const platform = require('platform');
